@@ -11,6 +11,9 @@
     <modules>
         <module>mvc</module>
         <module>mvc_lib</module>
+        <module>gc_cms</module>
+        <module>gc_g1</module>
+        <module>gc_common</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
