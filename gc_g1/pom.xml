@@ -32,7 +32,7 @@
                         -Xms64m
                         -Xmx64m
                         -XX:+UseG1GC
-                        -Xlog:gc:gc/gc.log
+                        -Xlog:gc:./gc/gc.log
                         -XX:+PrintGCDetails
                     </jvmArguments>
                     <fork>true</fork>
