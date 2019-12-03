@@ -34,7 +34,6 @@
                         -Xloggc:gc.log
                         -XX:+PrintGC
                         -XX:+PrintGCDetails
-                        -XX:+PrintGCTimeStamps
                     </jvmArguments>
                     <fork>true</fork>
                 </configuration>
