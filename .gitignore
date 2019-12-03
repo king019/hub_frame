@@ -1,4 +1,5 @@
 #index_eclipse
+*.log.*
 rebel.xml
 .metadata
 bin/
