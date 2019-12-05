@@ -9,5 +9,8 @@ public class GCUtil {
         while (true) {
             list.add(new Object());
         }
+    }public static void whiletrue() {
+        while (true) {
+        }
     }
 }
