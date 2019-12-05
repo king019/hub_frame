@@ -37,17 +37,15 @@ public class GCUtil {
 
     public static void blocked() {
         final Object lock = new Object();
-        new Thread() {
-            public void run() {
-                synchronized (lock) {
-                    System.out.println("i got lock, but don't release");
-                    try {
-                        Thread.sleep(1000L * 1000);
-                    } catch (InterruptedException e) {
-                    }
+        new Thread(() -> {
+            synchronized (lock) {
+                System.out.println("i got lock, but don't release");
+                try {
+                    Thread.sleep(1000L * 1000);
+                } catch (InterruptedException e) {
                 }
             }
-        }.start();
+        }).start();
 
         try {
             Thread.sleep(100);
