@@ -22,8 +22,7 @@ public class BootControl {
 
     @GetMapping("/timedWaiting")
     public String timedWaiting() throws InterruptedException {
-        //GCUtil.timedWaiting();
-        Thread.sleep(10000);
+        GCUtil.timedWaiting();
         return "";
     }
 
