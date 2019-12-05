@@ -1,6 +1,6 @@
 package com.k.spring.boot.control;
 
-import com.k.spring.common.GCUtil;
+import com.k.spring.boot.util.GCUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

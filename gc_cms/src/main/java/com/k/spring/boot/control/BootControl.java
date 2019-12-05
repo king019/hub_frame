@@ -1,6 +1,6 @@
 package com.k.spring.boot.control;
 
-import com.k.spring.common.GCUtil;
+import com.k.spring.boot.utilcms.GCUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "/")
 public class BootControl {
-    @GetMapping("/")
-    public String home() {
+    @GetMapping("/gc")
+    public String gc() {
         GCUtil.xm();
+        return "";
+    }
+
+    @GetMapping("/whiletrue")
+    public String whiletrue() {
+        GCUtil.whiletrue();
         return "";
     }
 }

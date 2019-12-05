@@ -1,4 +1,4 @@
-package com.k.spring.common;
+package com.k.spring.boot.util;
 
 import java.util.ArrayList;
 import java.util.List;
