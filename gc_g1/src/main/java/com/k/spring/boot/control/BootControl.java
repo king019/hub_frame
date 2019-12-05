@@ -19,4 +19,30 @@ public class BootControl {
         GCUtil.whiletrue();
         return "";
     }
+
+    @GetMapping("/timedWaiting")
+    public String timedWaiting() {
+        GCUtil.timedWaiting();
+        return "";
+    }
+
+    @GetMapping("/waiting")
+    public String waiting() {
+        GCUtil.waiting();
+        return "";
+    }
+
+    @GetMapping("/blocked")
+    public String blocked() {
+        GCUtil.blocked();
+        return "";
+    }
+
+    @GetMapping("/runnable")
+    public String runnable() {
+        GCUtil.runnable();
+        return "";
+    }
+
+
 }
