@@ -4,55 +4,62 @@ import com.k.spring.boot.util.GCUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping(value = "/")
 public class BootControl {
+    private String ret = "ok";
 
     @GetMapping("/")
-    public String home() {
-        return "";
+    public Object home() {
+        return retObj();
     }
+
     @GetMapping("/index")
-    public String index() {
+    public Object index() {
         new Object();
-        return "";
+        return retObj();
     }
+
     @GetMapping("/gc")
-    public String gc() {
+    public Object gc() {
         GCUtil.xm();
-        return "";
+        return retObj();
     }
 
     @GetMapping("/whiletrue")
-    public String whiletrue() {
+    public Object whiletrue() {
         GCUtil.whiletrue();
-        return "";
+        return retObj();
     }
 
     @GetMapping("/timedWaiting")
-    public String timedWaiting() throws InterruptedException {
+    public Object timedWaiting() throws InterruptedException {
         GCUtil.timedWaiting();
-        return "";
+        return retObj();
     }
 
     @GetMapping("/waiting")
-    public String waiting() {
+    public Object waiting() {
         GCUtil.waiting();
-        return "";
+        return retObj();
     }
 
     @GetMapping("/blocked")
-    public String blocked() {
+    public Object blocked() {
         GCUtil.blocked();
-        return "";
+        return retObj();
     }
 
     @GetMapping("/runnable")
-    public String runnable() {
+    public Object runnable() {
         GCUtil.runnable();
-        return "";
+        return retObj();
     }
 
+    private Object retObj() {
+        return ret;
+    }
 
 }
