@@ -1,15 +1,28 @@
 package com.k.spring.boot.util;
+
 import java.lang.management.ManagementFactory;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class GCUtil {
+    public static void random() {
+        List<Object> list = new ArrayList<>();
+        Random random = new Random();
+        long nextNum = random.nextLong();
+        for (int i = 0; i < nextNum; i++) {
+            list.add(new Object());
+        }
+    }
+
     public static void xm() {
         List<Object> list = new ArrayList<>();
         while (true) {
             list.add(new Object());
         }
-    }public static void whiletrue() {
+    }
+
+    public static void whiletrue() {
         while (true) {
         }
     }
