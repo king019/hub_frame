@@ -1,0 +1,4 @@
+#!/bin/bash
+mvn clean compile
+mvn spring-boot:stop
+mvn spring-boot:start
