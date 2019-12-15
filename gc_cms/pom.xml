@@ -33,7 +33,6 @@
                         -XX:+UseConcMarkSweepGC
                         -Xlog:gc:./gc/gc.log
                         -XX:+PrintGCDetails
-                        -XX:+PrintGCDateStamps
                     </jvmArguments>
                     <fork>true</fork>
                 </configuration>
