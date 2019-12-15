@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/")
 public class BootControl {
-    private String ret = "ok";
+    private Object ret =new Object();
 
     @GetMapping("/")
     public Object home() {
