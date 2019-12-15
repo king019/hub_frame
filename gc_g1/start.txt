@@ -1,7 +1,7 @@
 #!/bin/bash
 git pull
+mkdir ./gc/bak
+mv ./gc/gc* ./gc/bak
 mvn clean compile
 mvn spring-boot:stop
 mvn spring-boot:start
-mkdir ./gc/bak
-mv ./gc/gc* ./gc/bak
