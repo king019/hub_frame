@@ -27,7 +27,7 @@
                         -Xms64m
                         -Xmx64m
                         -XX:+UseConcMarkSweepGC
-                        -Xlog:gc:./gc/gc.log
+                        -Xlog:gc*:./gc/gc.log
                         -XX:+PrintGCDetails
                     </jvmArguments>
                     <fork>true</fork>
