@@ -1,7 +1,7 @@
 package com.k.spring.boot.control;
 
 import com.k.spring.boot.util.GCUtil;
-import org.springframework.stereotype.Controller;
+import com.k.spring.boot.vo.VO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/")
 public class BootControl {
-    private Object ret =new Object();
+    private VO ret =new VO();
 
     @GetMapping("/")
     public Object home() {
