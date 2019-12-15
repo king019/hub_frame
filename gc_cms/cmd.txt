@@ -3,5 +3,5 @@ cd ../
 mvn clean compile install
 cd ./gc_cms
 mvn clean compile
-
+mvn spring-boot:stop
 mvn spring-boot:start
