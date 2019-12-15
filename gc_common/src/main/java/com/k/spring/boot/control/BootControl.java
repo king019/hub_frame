@@ -9,10 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/")
 public class BootControl {
-    private VO ret =new VO();
+    private VO ret = new VO();
 
     @GetMapping("/")
     public Object home() {
+        return retObj();
+    }
+
+    @GetMapping("/random")
+    public Object random() {
+        GCUtil.random();
         return retObj();
     }
 
