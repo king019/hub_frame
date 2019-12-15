@@ -1,5 +1,4 @@
 package com.k.spring.boot.util;
-
 import java.lang.management.ManagementFactory;
 import java.util.ArrayList;
 import java.util.List;
