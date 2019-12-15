@@ -6,6 +6,15 @@ import java.util.List;
 import java.util.Random;
 
 public class GCUtil {
+    public static void randomSleep(int nextNum) throws InterruptedException {
+        List<Object> list = new ArrayList<>();
+        Random random = new Random();
+        for (int i = 0; i < nextNum; i++) {
+            Thread.sleep(1000);
+            list.add(new Object());
+        }
+    }
+
     public static void random() {
         List<Object> list = new ArrayList<>();
         Random random = new Random();

@@ -4,6 +4,7 @@ import com.k.spring.boot.util.GCUtil;
 import com.k.spring.boot.vo.VO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,6 +14,12 @@ public class BootControl {
 
     @GetMapping("/")
     public Object home() {
+        return retObj();
+    }
+
+    @GetMapping("/randomSleep")
+    public Object randomSleep(@RequestParam int nextNum) throws InterruptedException {
+        GCUtil.randomSleep(nextNum);
         return retObj();
     }
 
