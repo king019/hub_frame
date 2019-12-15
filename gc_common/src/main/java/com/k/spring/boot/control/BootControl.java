@@ -9,6 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/")
 public class BootControl {
 
+    @GetMapping("/")
+    public String home() {
+        return "";
+    }
+    @GetMapping("/index")
+    public String index() {
+        new Object();
+        return "";
+    }
     @GetMapping("/gc")
     public String gc() {
         GCUtil.xm();
