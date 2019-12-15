@@ -3,3 +3,5 @@ git pull
 mvn clean compile
 mvn spring-boot:stop
 mvn spring-boot:start
+mkdir ./gc/bak
+mv ./gc/gc* ./gc/bak
