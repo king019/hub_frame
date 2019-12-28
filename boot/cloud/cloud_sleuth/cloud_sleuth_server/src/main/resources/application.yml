@@ -1,11 +1,11 @@
 server:
-  port: 8806
+  port: 10021
 spring:
   application:
     name: sleuth_server
   zipkin:
-    baseUrl: http://127.0.0.1:8807
+    baseUrl: http://127.0.0.1:10022
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8801/eureka
+      defaultZone: http://127.0.0.1:10001/eureka

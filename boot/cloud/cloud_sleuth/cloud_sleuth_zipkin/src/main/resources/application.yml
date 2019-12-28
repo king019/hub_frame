@@ -1,9 +1,9 @@
 server:
-  port: 8807
+  port: 10022
 spring:
   application:
     name: sleuth_zipkin
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8801/eureka
+      defaultZone: http://127.0.0.1:10001/eureka

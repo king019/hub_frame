@@ -1,9 +1,9 @@
 server:
-  port: 8804
+  port: 10008
 spring:
   application:
     name: ribbon-service
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8801/eureka
+      defaultZone: http://127.0.0.1:10001/eureka
