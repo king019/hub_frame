@@ -1,8 +1,2 @@
 #!/bin/bash
-git pull
-cd ../
-mvn clean compile install
-cd ./gc_g1
-mvn clean compile
-mvn spring-boot:stop
-mvn spring-boot:start
+sh /root/soft/springbootmvc/cmd/install.txt
