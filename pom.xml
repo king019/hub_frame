@@ -98,26 +98,6 @@
                     <target>${jdk.version}</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <jvmArguments>
-                        -Xms64m
-                        -Xmx64m
-                        -XX:+UseConcMarkSweepGC
-                        -Xlog:gc*:./gc/gc.log
-                    </jvmArguments>
-                    <fork>true</fork>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 

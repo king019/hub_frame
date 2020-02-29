@@ -16,5 +16,28 @@
       <artifactId>spring-cloud-config-server</artifactId>
     </dependency>
   </dependencies>
-
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <jvmArguments>
+            -Xms64m
+            -Xmx64m
+            -XX:+UseG1GC
+            -Xlog:gc*:./gc/gc.log
+          </jvmArguments>
+          <fork>true</fork>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
