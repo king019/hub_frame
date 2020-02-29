@@ -1,2 +1,2 @@
 #!/bin/bash
-sh /root/soft/springbootmvc/cmd/install.txt
+sh /root/soft/hub_frame/cmd/install.txt

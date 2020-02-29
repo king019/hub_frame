@@ -1,4 +1,4 @@
 #!/bin/bash
 git pull
-cd /root/soft/springbootmvc/
+cd /root/soft/hub_frame/
 mvn clean compile install
