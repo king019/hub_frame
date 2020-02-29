@@ -3,16 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>hub_frame</artifactId>
+        <artifactId>boot</artifactId>
         <groupId>hub_frame</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>boot</artifactId>
+    <artifactId>boot_cloud</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>boot_cloud</module>
+        <module>boot_cloud_config</module>
+        <module>boot_cloud_eureka</module>
+        <module>boot_cloud_feign</module>
+        <module>boot_cloud_sleuth</module>
     </modules>
 
 
