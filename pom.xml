@@ -14,12 +14,12 @@
     </modules>
     <properties>
         <jdk.version>11</jdk.version>
-        <spring.version>2.2.4.RELEASE</spring.version>
-        <cloud.version>Hoxton.SR2</cloud.version>
-        <guava.version>28.2-jre</guava.version>
+        <spring.version>2.3.0.RELEASE</spring.version>
+        <cloud.version>Hoxton.SR4</cloud.version>
+        <guava.version>29.0-jre</guava.version>
         <zipkin.version>2.12.9</zipkin.version>
-        <log4j-slf4j-impl.version>2.13.0</log4j-slf4j-impl.version>
-        <lombok.version>1.18.10</lombok.version>
+        <log4j-slf4j-impl.version>2.13.3</log4j-slf4j-impl.version>
+        <lombok.version>1.18.12</lombok.version>
     </properties>
     <dependencyManagement>
         <dependencies>
