@@ -3,10 +3,9 @@ name: maven
 
 steps:
   - name: test
-    image: docker:5000/king019/alpine
+    image: king019/alpine
     commands:
-      - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-      - mvn test -B
+      - echo 1
 trigger:
   branch:
     - master
