@@ -1,15 +1,9 @@
 kind: pipeline
-type: docker
 name: default
 
 steps:
-  - name: build
-    image: golang
+  - name: test
+    image: maven:3-jdk-10
     commands:
-      - go build
-      - go test
-
-trigger:
-  event:
-    include:
-      - push
+      - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+      - mvn test -B
