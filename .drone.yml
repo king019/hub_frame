@@ -3,3 +3,8 @@ pipeline:
     image: golang
     commands:
       - go build
+trigger:
+  branch:
+    - master
+  event:
+    - push
