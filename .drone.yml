@@ -1,10 +1,15 @@
-pipeline:
-  build:
+kind: pipeline
+name: default
+
+steps:
+  - name: test
     image: king019/alpine
     commands:
-      - java -version
+      - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+      - mvn test -B
 trigger:
   branch:
     - master
   event:
     - push
+
