@@ -1,7 +1,6 @@
 kind: pipeline
 name: default
 
-
 steps:
   - name: test
     image: king019/alpine
