@@ -10,5 +10,6 @@ steps:
       - go test
 
 trigger:
-  branch:
-    - master
+  event:
+    include:
+      - push
