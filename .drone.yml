@@ -3,7 +3,6 @@ name: maven
 
 steps:
   - name: test
-    image: king019/alpine
     commands:
       - echo 1
 trigger:
