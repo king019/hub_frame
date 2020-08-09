@@ -30,7 +30,6 @@
                         -XX:+UseG1GC
                         -Xlog:gc*:./gc/gc.log
                         -XX:+PrintSafepointStatistics
-                        –XX:PrintSafepointStatisticsCount=1
                     </jvmArguments>
                     <fork>true</fork>
                 </configuration>
