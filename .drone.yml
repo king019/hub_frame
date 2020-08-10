@@ -4,6 +4,7 @@ name: test
 steps:
   - name: test
     image: king019/alpine
+    privileged: true
     volumes:
       - name: maven
         path: /root/.m2
