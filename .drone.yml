@@ -5,7 +5,12 @@ steps:
   - name: test
     image: king019/alpine
     volumes:
-      - /opt/soft/docker/data/maven/m2:/root/.m2
+      - name: maven
+        path: /root/.m2
     commands:
       - mvn install -DskipTests=true  -B -V
       - mvn test -B
+volumes:
+  - name: maven
+    host:
+      path: /opt/soft/docker/data/maven/m2
