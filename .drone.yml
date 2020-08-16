@@ -11,6 +11,14 @@ steps:
     commands:
       - mvn install -DskipTests=true  -B -V
       - mvn versions:display-property-updates
+  - name: version
+    image: king019/alpine
+    privileged: true
+    volumes:
+      - name: maven
+        path: /root/.m2
+    commands:
+      - mvn versions:display-property-updates
 volumes:
   - name: maven
     host:
