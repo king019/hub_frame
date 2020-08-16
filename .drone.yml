@@ -1,8 +1,8 @@
 kind: pipeline
-name: test
+name: frame
 
 steps:
-  - name: test
+  - name: install
     image: king019/alpine
     privileged: true
     volumes:
@@ -10,7 +10,7 @@ steps:
         path: /root/.m2
     commands:
       - mvn install -DskipTests=true  -B -V
-      - mvn test -B
+      - mvn versions:display-property-updates
 volumes:
   - name: maven
     host:
