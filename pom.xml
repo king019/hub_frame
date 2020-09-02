@@ -14,8 +14,8 @@
     </modules>
     <properties>
 <!--        <jdk.version>11</jdk.version>-->
-        <spring.version>2.3.0.RELEASE</spring.version>
-        <cloud.version>Hoxton.SR4</cloud.version>
+        <spring.version>2.3.3.RELEASE</spring.version>
+        <cloud.version>Hoxton.SR8</cloud.version>
         <guava.version>29.0-jre</guava.version>
         <zipkin.version>2.12.9</zipkin.version>
         <log4j-slf4j-impl.version>2.13.3</log4j-slf4j-impl.version>
