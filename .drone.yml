@@ -9,7 +9,7 @@ steps:
       - name: maven
         path: /root/.m2
     commands:
-      - echo date
+      - date
       - mvn install -DskipTests=true  -B -V
       - mvn versions:display-property-updates
   - name: version
