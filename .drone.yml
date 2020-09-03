@@ -9,8 +9,7 @@ steps:
       - name: maven
         path: /root/.m2
     commands:
-      - date
-      - mvn install -DskipTests=true  -B -V
+      - mvn install -Dmaven.test.skip=true
       - mvn versions:display-property-updates
   - name: version
     image: king019/alpine
