@@ -10,7 +10,6 @@ steps:
         path: /root/.m2
     commands:
       - mvn install -Dmaven.test.skip=true
-      - mvn versions:display-property-updates
   - name: version
     image: registry.cn-beijing.aliyuncs.com/king019/alpine
     privileged: true
