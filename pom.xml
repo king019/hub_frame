@@ -13,7 +13,7 @@
         <module>boot</module>
     </modules>
     <properties>
-<!--        <jdk.version>11</jdk.version>-->
+        <jdk.version>11</jdk.version>
         <spring.version>2.3.4.RELEASE</spring.version>
         <cloud.version>Hoxton.SR8</cloud.version>
         <guava.version>30.0-jre</guava.version>
@@ -98,15 +98,15 @@
     </dependencies>
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.1</version>-->
-<!--                <configuration>-->
-<!--                    <source>${jdk.version}</source>-->
-<!--                    <target>${jdk.version}</target>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
