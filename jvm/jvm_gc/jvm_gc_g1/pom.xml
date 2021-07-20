@@ -30,6 +30,7 @@
                         -XX:+UseG1GC
                         -Xlog:gc*:./gc/gc.log
                         -XX:+PrintSafepointStatistics
+                        -XX:NativeMemoryTracking=detail
                     </jvmArguments>
                     <fork>true</fork>
                 </configuration>
