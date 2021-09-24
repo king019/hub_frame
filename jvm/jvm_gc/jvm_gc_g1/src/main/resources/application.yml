@@ -1,2 +1,6 @@
 server:
   port : 1002
+spring:
+  application:
+    admin:
+      enabled : true
