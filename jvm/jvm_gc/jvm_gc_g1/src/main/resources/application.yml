@@ -1,6 +1,8 @@
 server:
   port : 1002
-spring:
+  tomcat:
+    mbeanregistry:
+      enabled : true
   application:
     admin:
       enabled : true
