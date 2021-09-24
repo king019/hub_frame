@@ -1,2 +1,2 @@
 #!/bin/bash
-sh /root/soft/hub_frame/cmd/install.txt
+sh /opt/soft/hub_frame/cmd/install.txt
