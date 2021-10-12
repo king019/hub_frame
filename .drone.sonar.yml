@@ -1,0 +1,23 @@
+kind: pipeline
+name: frame
+
+steps:
+  - name: sonar
+    image: registry.cn-beijing.aliyuncs.com/king019/linux:jdk11
+    privileged: true
+    volumes:
+      - name: maven
+        path: /root/.m2
+    environment:
+      SONAR_URL:
+        from_secret: sonar_url
+      SONAR_TOKEN:
+        from_secret: sonar_token
+    commands:
+      - java -version
+      - mvn -version
+      - mvn clean verify sonar:sonar  -Dsonar.host.url=$SONAR_URL  -Dsonar.login=$SONAR_TOKEN
+volumes:
+  - name: maven
+    host:
+      path: /opt/soft/docker/data/maven/m2
