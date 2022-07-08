@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: jvm-cms
+server:
+  port : 10001
+  tomcat:
+    mbeanregistry:
+      enabled : true
+  application:
+    admin:
+      enabled : true

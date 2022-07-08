@@ -1,8 +1,0 @@
-server:
-  port : 1002
-  tomcat:
-    mbeanregistry:
-      enabled : true
-  application:
-    admin:
-      enabled : true

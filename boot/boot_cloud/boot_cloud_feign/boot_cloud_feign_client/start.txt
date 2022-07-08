@@ -1,2 +1,0 @@
-#!/bin/bash
-sh /opt/soft/hub_frame/cmd/start.txt

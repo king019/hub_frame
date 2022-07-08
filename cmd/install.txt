@@ -1,4 +1,0 @@
-#!/bin/bash
-git pull
-cd /opt/soft/hub_frame/
-mvn clean compile install

@@ -1,0 +1,4 @@
+#!/bin/bash
+git pull
+cd /opt/soft/version/aliyun/ali_fw_frame
+mvn clean compile install

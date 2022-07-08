@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jvm-cms-admin
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: nacos:8848
+  boot:
+    admin:
+      client:
+        url: http://admin:8980
+server:
+  port : 10011
+  tomcat:
+    mbeanregistry:
+      enabled : true
+  application:
+    admin:
+      enabled : true

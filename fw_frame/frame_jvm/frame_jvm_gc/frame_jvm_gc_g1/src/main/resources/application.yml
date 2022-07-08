@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: jvm-g1
+server:
+  port : 10002
+  tomcat:
+    mbeanregistry:
+      enabled : true
+  application:
+    admin:
+      enabled : true
